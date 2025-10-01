@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/png" href="/icon.png">
+<title>Sander`s ass</title>
+<style>
+:root{
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #94a3b8;
+  --accent: #6ee7b7;
+  --accent-2: #7dd3fc;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(160deg, #071021 0%, #0a1324 60%);
+  color:#e6eef6;padding:20px;-webkit-font-smoothing:antialiased;
+}
+header{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+header h1{margin:0;font-size:1.2rem}
+header p{margin:0;color:var(--muted);font-size:0.9rem}
+main{display:grid;grid-template-columns: 1fr 360px;gap:18px;align-items:start;}
+@media (max-width:880px){main{grid-template-columns:1fr;padding-bottom:40px}}
+.card{background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border:1px solid rgba(255,255,255,0.03);padding:14px;border-radius:10px;box-shadow: 0 6px 18px rgba(2,6,23,0.6);}
+.tabs{display:flex;gap:8px;margin-bottom:12px}
+.tabs button{background:var(--glass);border:none;color:var(--muted);padding:8px 10px;border-radius:8px;cursor:pointer;}
+.tabs button[aria-selected="true"]{color:var(--bg);background:linear-gradient(90deg,var(--accent),var(--accent-2));font-weight:600;}
+.tab-panel{display:none}
+.tab-panel[aria-hidden="false"]{display:block}
+.list-controls{display:flex;gap:8px;margin-bottom:8px}
+.items{margin:0;padding:0;list-style:none}
+.items li{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:8px;border-radius:8px;margin-bottom:8px;background:rgba(255,255,255,0.02);}
+.small-btn{padding:6px 8px;border-radius:8px;border:none;background:var(--glass);color:var(--muted);cursor:pointer;}
+.modal-backdrop{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:linear-gradient(180deg, rgba(2,6,23,0.6), rgba(2,6,23,0.9));z-index:9999;}
+.modal{width:min(720px,calc(100% - 40px));background:var(--card);padding:18px;border-radius:12px;}
+.modal-backdrop[open]{display:flex;}
+.muted{color:var(--muted)}
+.flex{display:flex;gap:8px;align-items:center}
+.spacer{flex:1}
+.accent-pill{background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:6px 8px;border-radius:999px;color:var(--bg);font-weight:700}
+</style>
+</head>
+<body>
+<header>
+<h1>Sander`s ass</h1>
+<p class="muted">Welcome to Sander`s ass</p>
+<div class="spacer"></div>
+<div class="accent-pill">Made for Sander</div>
+</header>
+
+<main>
+  <!-- Left column -->
+  <section class="card" aria-labelledby="demo-title">
+    <h2 id="demo-title" style="margin-top:0;font-size:1rem">About</h2>
+
+    <!-- Tabs -->
+    <nav class="tabs" role="tablist" aria-label="Main tabs">
+      <button role="tab" aria-selected="true" id="tab-1" aria-controls="panel-1">Fun facts</button>
+      <button role="tab" aria-selected="false" id="tab-2" aria-controls="panel-2">Sandra</button>
+      <button role="tab" aria-selected="false" id="tab-3" aria-controls="panel-3">Sander train</button>
+    </nav>
+
+    <div id="panel-1" class="tab-panel" role="tabpanel" aria-labelledby="tab-1" aria-hidden="false">
+      <div class="card">
+        <h3 style="margin-top:0">Fun facts about Sander!</h3>
+        <div class="muted">Fact 1: He's a Sandra!</div>
+        <div class="muted">Fact 2: He's a train!</div>
+      </div>
+    </div>
+
+    <div id="panel-2" class="tab-panel" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true">
+      <div class="card">
+        <h3 style="margin-top:0">Who's Sandra?</h3>
+        <div class="muted">The Sandra meme was made by me(The maker of the site), when i tryed to video call Sander he was hangup on me cuz he was showering.</div>
+        <div class="muted">So he send me a picture of his face to tell me hes showering, after that a other friend removed his nose.</div>
+        <div class="muted">After i got the image with the nose removed i added 2 thombs ups and a text saying 'Sandra'.</div>
+        <div class="muted">I made 2 sheets of stickers and 1 mug.</div>
+        <div class="muted">NO IMAGE CUZ FUKCING <a href="https://github.com/sanders-ass/sanders-ass.github.io/issues/1">DMCA violation</a>!!!!!!!!</div>
+      </div>
+    </div>
+
+    <div id="panel-3" class="tab-panel" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true">
+      <div class="card">
+        <h3 style="margin-top:0">Who's Sander train?</h3>
+        <div class="muted">Its sander but train!</div>
+        <img src="/sander_train.png" alt="Sander Train" width="360" height="168">
+      </div>
+    </div>
+
+    <details style="margin-top:12px;">
+      <summary style="cursor:pointer">More info about site</summary>
+      <div style="margin-top:8px;color:var(--muted)">
+        This site has:
+        <ul>
+          <li>Info about Sander.</li>
+          <li>Explanation of jokes about Sander.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- Right column -->
+  <aside class="side">
+    <div class="card">
+      <h3 style="margin-top:0">Notes & Remembers</h3>
+      <div class="list-controls">
+        <input id="new-item" placeholder="New item" style="flex:1;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" />
+        <button id="add-item" class="small-btn">Add</button>
+      </div>
+      <ul id="items" class="items" aria-live="polite"></ul>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">Do you have info?</h3>
+      <p class="muted" style="margin:0 0 8px 0">If you have info about sander of anyting please email me! Or if you want info about How and Why this site:</p>
+      <button type="button" id="open-modal" class="small-btn" aria-haspopup="dialog">Info and Contact</button>
+    </div>
+  </aside>
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal" role="document" aria-labelledby="modal-title">
+    <h3 id="modal-title">More info</h3>
+    <p class="muted">Who: the maker of this SHIT site is a friend of Sander.</p>
+    <p class="muted">Why: to let others know more about my friend!</p>
+    <p class="muted">I think sander NEEDS to be a popliure icon not just in school but everywere, so i made this!</p>
+    <div style="display:flex;gap:8px;margin-top:12px;">
+      <button id="close-modal" class="small-btn">Close</button>
+      <button id="modal-do" class="small-btn">Mail me with info about sander!</button>
+    </div>
+  </div>
+</div>
+
+<footer class="muted card" style="margin-top:12px">
+<div style="display:flex;gap:8px;align-items:center">
+  <div>Build by sanders-ass • <a href="https://github.com/sanders-ass/">Github</a></div>
+  <div class="spacer"></div>
+  <div>BSD 3 Clause Licence</div>
+</div>
+</footer>
+
+<script>
+const tabs = document.querySelectorAll('.tabs [role="tab"]');
+tabs.forEach(btn=>{
+  btn.addEventListener('click', ()=> activateTab(btn));
+  btn.addEventListener('keydown', e=>{
+    if(e.key==='ArrowRight'||e.key==='ArrowLeft'){
+      e.preventDefault();
+      const idx=[...tabs].indexOf(btn);
+      const next = (e.key==='ArrowRight') ? (idx+1)%tabs.length : (idx-1+tabs.length)%tabs.length;
+      tabs[next].focus();
+      activateTab(tabs[next]);
+    }
+  });
+});
+function activateTab(button){
+  tabs.forEach(b=>{
+    const selected = b===button;
+    b.setAttribute('aria-selected', selected?'true':'false');
+    const panel = document.getElementById(b.getAttribute('aria-controls'));
+    if(panel) panel.setAttribute('aria-hidden', selected?'false':'true');
+  });
+}
+
+// Items list
+const itemsEl = document.getElementById('items');
+const newItemInput = document.getElementById('new-item');
+const addItemBtn = document.getElementById('add-item');
+const ITEMS_KEY = 'complex-demo:items';
+function loadItems(){
+  const raw = localStorage.getItem(ITEMS_KEY);
+  renderItems(raw ? JSON.parse(raw) : []);
+}
+function saveItems(arr){ localStorage.setItem(ITEMS_KEY, JSON.stringify(arr)); renderItems(arr);}
+function renderItems(arr){
+  itemsEl.innerHTML='';
+  if(arr.length===0){itemsEl.innerHTML='<li class="muted">No items yet</li>';return;}
+  arr.forEach((text,idx)=>{
+    const li=document.createElement('li');
+    const span=document.createElement('span'); span.textContent=text;
+    const controls=document.createElement('div'); controls.style.display='flex'; controls.style.gap='6px';
+    const up=document.createElement('button'); up.textContent='▲'; up.className='small-btn';
+    const down=document.createElement('button'); down.textContent='▼'; down.className='small-btn';
+    const del=document.createElement('button'); del.textContent='✖'; del.className='small-btn';
+    up.addEventListener('click', ()=>{ if(idx>0){let a=getItems(); [a[idx-1],a[idx]]=[a[idx],a[idx-1]]; saveItems(a);}});
+    down.addEventListener('click', ()=>{let a=getItems(); if(idx<a.length-1){ [a[idx+1],a[idx]]=[a[idx],a[idx+1]]; saveItems(a);} });
+    del.addEventListener('click', ()=>{let a=getItems(); a.splice(idx,1); saveItems(a);});
+    controls.append(up,down,del); li.append(span,controls); itemsEl.appendChild(li);
+  });
+}
+function getItems(){ try{return JSON.parse(localStorage.getItem(ITEMS_KEY))||[];}catch{return[];} }
+addItemBtn.addEventListener('click', ()=>{
+  const v=newItemInput.value.trim(); if(!v) return; const a=getItems(); a.push(v); saveItems(a); newItemInput.value=''; newItemInput.focus();
+});
+newItemInput.addEventListener('keydown', e=>{ if(e.key==='Enter') addItemBtn.click(); });
+loadItems();
+
+// Modal
+const modalBackdrop = document.getElementById('modal');
+const openModalBtn = document.getElementById('open-modal');
+const closeModalBtn = document.getElementById('close-modal');
+openModalBtn.addEventListener('click', ()=> openModal());
+closeModalBtn.addEventListener('click', closeModal);
+document.getElementById('modal-do').addEventListener('click', ()=> window.open("mailto:flox@ratgers-online.nl", "_blank"));
+function openModal(){
+  modalBackdrop.setAttribute('open',''); modalBackdrop.setAttribute('aria-hidden','false'); closeModalBtn.focus();
+  document.addEventListener('keydown', escCloseModal);
+}
+function closeModal(){
+  modalBackdrop.removeAttribute('open'); modalBackdrop.setAttribute('aria-hidden','true'); document.removeEventListener('keydown', escCloseModal);
+}
+function escCloseModal(e){ if(e.key==='Escape') closeModal();}
+modalBackdrop.addEventListener('click', e=>{ if(e.target===modalBackdrop) closeModal(); });
+</script>
+</body>
+</html>
